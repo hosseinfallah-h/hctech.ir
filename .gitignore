@@ -1,0 +1,35 @@
+# Python junk (owner's files - excluded)
+*.py
+*.pyc
+*.sql
+*.bat
+*.env
+*.pdf
+*.csv
+*.txt
+*.md
+*.code-workspace
+
+# Python cache
+__pycache__/
+*.cpython-*
+
+# Database
+*.db
+*.sqlite
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if any)
+node_modules/
+
+# Original junk folders
+/test/
+/styles/
+/static/

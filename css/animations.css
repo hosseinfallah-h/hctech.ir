@@ -1,0 +1,413 @@
+/* ========================================
+   HCTECH PREMIUM ANIMATIONS v5.0
+   ظریف، حرفه‌ای، بدون اغراق
+   ======================================== */
+
+/* ===========================================
+   ۱. Fade In Up — اسکرول reveal پایه
+   =========================================== */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===========================================
+   ۲. Fade In — فقط opacity
+   =========================================== */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* ===========================================
+   ۳. Slide In Right (از راست میاد → RTL)
+   =========================================== */
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ===========================================
+   ۴. Slide In Left (از چپ میاد → RTL)
+   =========================================== */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ===========================================
+   ۵. Scale In — بزرگ شدن نرم
+   =========================================== */
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ===========================================
+   ۶. Stagger Children — بچه‌ها با تاخیر
+   =========================================== */
+.stagger-children>* {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stagger-children.visible>*:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.stagger-children.visible>*:nth-child(2) {
+    transition-delay: 0.07s;
+}
+
+.stagger-children.visible>*:nth-child(3) {
+    transition-delay: 0.14s;
+}
+
+.stagger-children.visible>*:nth-child(4) {
+    transition-delay: 0.21s;
+}
+
+.stagger-children.visible>*:nth-child(5) {
+    transition-delay: 0.28s;
+}
+
+.stagger-children.visible>*:nth-child(6) {
+    transition-delay: 0.35s;
+}
+
+.stagger-children.visible>*:nth-child(7) {
+    transition-delay: 0.42s;
+}
+
+.stagger-children.visible>*:nth-child(8) {
+    transition-delay: 0.49s;
+}
+
+.stagger-children.visible>*:nth-child(9) {
+    transition-delay: 0.56s;
+}
+
+.stagger-children.visible>* {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===========================================
+   ۷. Pulse — زنده بودن (خیلی ملایم)
+   =========================================== */
+.pulse {
+    animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+/* ===========================================
+   ۸. Shimmer — بارگذاری
+   =========================================== */
+.shimmer {
+    background: linear-gradient(90deg, #e5e7eb 0%, #f3f4f6 50%, #e5e7eb 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.8s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* ===========================================
+   ۹. Spin — چرخش
+   =========================================== */
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===========================================
+   ۱۰. Bounce — جهش ملایم
+   =========================================== */
+.bounce {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* ===========================================
+   ۱۱. Float — شناور
+   =========================================== */
+.float {
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.float-delay-1 {
+    animation-delay: 0s;
+}
+
+.float-delay-2 {
+    animation-delay: 1.5s;
+}
+
+.float-delay-3 {
+    animation-delay: 3s;
+}
+
+/* ===========================================
+   ۱۲. Ripple — افکت کلیک دکمه
+   =========================================== */
+.ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s, opacity 0.5s;
+}
+
+.ripple:active::after {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    transition: 0s;
+}
+
+/* ===========================================
+   ۱۳. Shake — خطای فرم
+   =========================================== */
+.shake {
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+/* ===========================================
+   ۱۴. Glow Hover — سایه رنگی
+   =========================================== */
+.glow-hover {
+    transition: box-shadow 0.3s ease;
+}
+
+.glow-hover:hover {
+    box-shadow: 0 0 30px rgba(142, 68, 173, 0.2);
+}
+
+.glow-hover-gold:hover {
+    box-shadow: 0 0 30px rgba(199, 156, 96, 0.25);
+}
+
+/* ===========================================
+   ۱۵. Underline Reveal
+   =========================================== */
+.underline-reveal {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-reveal::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-primary, #8e44ad);
+    transition: width 0.3s ease;
+}
+
+.underline-reveal:hover::after {
+    width: 100%;
+}
+
+/* ===========================================
+   ۱۶. Skeleton Pulse
+   =========================================== */
+.skeleton {
+    background: #e5e7eb;
+    border-radius: 8px;
+    animation: skeleton 1.6s ease-in-out infinite;
+}
+
+@keyframes skeleton {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+/* ===========================================
+   ۱۷. Back to Top Button
+   =========================================== */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 44px;
+    height: 44px;
+    background: var(--color-primary, #8e44ad);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 20px rgba(142, 68, 173, 0.3);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    z-index: 500;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(142, 68, 173, 0.4);
+}
+
+/* ===========================================
+   ۱۸. Scroll Progress Bar
+   =========================================== */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary, #8e44ad), var(--color-accent, #FFD700));
+    z-index: 2000;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+/* ===========================================
+   ۱۹. Magnetic Hover (کمکی برای JS)
+   =========================================== */
+.magnetic {
+    transition: transform 0.2s ease;
+}
+
+/* ===========================================
+   ۲۰. Gradient Text
+   =========================================== */
+.gradient-text {
+    background: linear-gradient(135deg, var(--color-primary, #8e44ad), var(--color-gold, #c79c60));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===========================================
+   ۲۱. Reduced Motion
+   =========================================== */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="مدل شایستگی، مدیریت استعداد، مدیریت جانشین پروری، کانون ارزیابی، توسعه شایستگی، دوره های آموزشی، مدیریت عملکرد، مدیریت دانش، کلینیک رفتاری">
+    <title>HCTECH | معماری فناوری‌های سرمایه انسانی</title>
+
+    <!-- Preload فونت لوکال -->
+    <link rel="preload" href="assets/fonts/Vazirmatn-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="assets/fonts/Vazirmatn-Bold.ttf" as="font" type="font/ttf" crossorigin>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts برای برندینگ -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ==========================================
+    HEADER
+    =========================================== -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="./images/logo.png" alt="HCTECH" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">صفحه اصلی</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-btn">خدمات ما</a>
+                        <div class="dropdown-content">
+                            <a href="competency.html">طراحی مدل شایستگی</a>
+                            <a href="tm.html">مدیریت استعداد</a>
+                            <a href="sp.html">جانشین‌پروری</a>
+                            <a href="assessmentcenter.html">کانون ارزیابی</a>
+                            <a href="#">دوره‌های توسعه شایستگی</a>
+                            <a href="#">مدیریت عملکرد</a>
+                            <a href="#">کوچینگ</a>
+                            <a href="#">مدیریت دانش</a>
+                            <a href="#">کلینیک رفتاری</a>
+                        </div>
+                    </li>
+                    <li><a href="#gallery">نگارخانه</a></li>
+                    <li><a href="contact.html">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================
+    VIDEO SECTION
+    =========================================== -->
+    <section class="video-section">
+        <div class="video-wrapper">
+            <video autoplay muted loop playsinline id="hero-video" poster="./images/model.png">
+                <source src="./video/video 1.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay-text fade-in">
+                <h1 class="video-overlay-title">HCTECH</h1>
+                <p class="video-overlay-subtitle">Unique experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    SERVICES
+    =========================================== -->
+    <section id="services" class="services stagger-children">
+        <div class="service-card">
+            <a href="competency.html">
+                <img src="./images/competency/competencymodelindex.jpg" alt="طراحی مدل شایستگی" loading="lazy">
+                <h2>طراحی مدل شایستگی</h2>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="tm.html">
+                <img src="./images/talent_managment/talentmanagmentindex.jpg" alt="مدیریت استعداد" loading="lazy">
+                <h2>طراحی و پیاده‌سازی فرآیند مدیریت استعداد</h2>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="sp.html">
+                <img src="./images/Succession_management/succissionplaningindex.jpg" alt="جانشین‌پروری" loading="lazy">
+                <h2>طراحی و پیاده‌سازی فرآیند جانشین‌پروری</h2>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="assessmentcenter.html">
+                <img src="./images/assessmentcenterindex.jpg" alt="کانون ارزیابی" loading="lazy">
+                <h2>طراحی و اجرای کانون ارزیابی</h2>
+            </a>
+        </div>
+        <div class="service-card">
+            <img src="./images/learning/learningindex.jpg" alt="دوره‌های توسعه شایستگی" loading="lazy">
+            <h2>طراحی دوره‌های توسعه شایستگی</h2>
+        </div>
+        <div class="service-card">
+            <img src="./images/Performance_Management/PerformanceManagementindex.jpg" alt="مدیریت عملکرد"
+                loading="lazy">
+            <h2>مدیریت عملکرد</h2>
+        </div>
+        <div class="service-card">
+            <img src="./images/coaching/coachingindex.jpg" alt="کوچینگ" loading="lazy">
+            <h2>کوچینگ فردی و سازمانی</h2>
+        </div>
+        <div class="service-card">
+            <img src="./images/Knowledge_management/Knowledgemanagementindex.jpg" alt="مدیریت دانش" loading="lazy">
+            <h2>مدیریت دانش</h2>
+        </div>
+        <div class="service-card">
+            <img src="./images/Behavioral_clinic/Behavioralclinicindex.jpg" alt="کلینیک رفتاری" loading="lazy">
+            <h2>کلینیک رفتاری</h2>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    STATISTICS
+    =========================================== -->
+    <section class="statistics-section">
+        <div class="statistics-container">
+            <div class="stat-item fade-in-up">
+                <div class="stat-icon"><i class="fas fa-users-cog"></i></div>
+                <div class="stat-number">
+                    <span class="counter" data-target="6000">0</span>
+                    <span class="stat-unit">نفر</span>
+                </div>
+                <h3 class="stat-title">ارزیابی شده در کانون ارزیابی</h3>
+            </div>
+            <div class="stat-item fade-in-up">
+                <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="stat-number">
+                    <span class="counter" data-target="700">0</span>
+                    <span class="stat-unit">نفر</span>
+                </div>
+                <h3 class="stat-title">توسعه یافته در دوره‌های توسعه</h3>
+            </div>
+            <div class="stat-item fade-in-up">
+                <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="stat-number">
+                    <span class="counter" data-target="70">0</span>
+                    <span class="stat-unit">مدل</span>
+                </div>
+                <h3 class="stat-title">مدل شایستگی طراحی شده</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    FOOTER
+    =========================================== -->
+    <footer>
+        <div class="wave-container">
+            <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 13 -9"
+                            result="goo" />
+                        <xfeBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                    <path id="wave"
+                        d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+                </defs>
+                <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+                <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+                <g class="gooeff" filter="url(#goo)">
+                    <circle class="drop drop1" cx="20" cy="2" r="8.8" />
+                    <circle class="drop drop2" cx="25" cy="2.5" r="7.5" />
+                    <circle class="drop drop3" cx="16" cy="2.8" r="9.2" />
+                    <circle class="drop drop4" cx="18" cy="2" r="8.8" />
+                    <circle class="drop drop5" cx="22" cy="2.5" r="7.5" />
+                    <circle class="drop drop6" cx="26" cy="2.8" r="9.2" />
+                    <circle class="drop drop1" cx="5" cy="4.4" r="8.8" />
+                    <circle class="drop drop2" cx="5" cy="4.1" r="7.5" />
+                    <circle class="drop drop3" cx="8" cy="3.8" r="9.2" />
+                    <circle class="drop drop4" cx="3" cy="4.4" r="8.8" />
+                    <circle class="drop drop5" cx="7" cy="4.1" r="7.5" />
+                    <circle class="drop drop6" cx="10" cy="4.3" r="9.2" />
+                    <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8" />
+                    <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5" />
+                    <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2" />
+                    <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8" />
+                    <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5" />
+                    <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2" />
+                    <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+                </g>
+            </svg>
+        </div>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>اطلاعات تماس</h3>
+                <p><i class="fas fa-map-marker-alt"></i> آدرس : تهران، خیابان ولیعصر، خیابان رودسر، پلاک 8</p>
+                <p><i class="fas fa-phone"></i> شماره تماس: 09905672955</p>
+                <p><i class="fas fa-envelope"></i> ایمیل: hctech.ir@gmail.com</p>
+                <p><i class="fab fa-instagram"></i> <a href="#">اینستاگرام</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="#">لینکداین</a></p>
+            </div>
+            <div class="message-box">
+                <h3>پیام های شما از این طریق ملاحظه می گردد:</h3>
+                <form>
+                    <input type="text" placeholder="نام و نام خانوادگی" required>
+                    <input type="email" placeholder="تلفن همراه" required>
+                    <textarea placeholder="متن پیام" required></textarea>
+                    <button type="submit">ارسال</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

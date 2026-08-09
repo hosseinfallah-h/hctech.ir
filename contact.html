@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صفحه تماس با ما - HCTECH">
+    <title>تماس با ما - HCTECH</title>
+
+    <!-- Preload فونت -->
+    <link rel="preload" href="assets/fonts/Vazirmatn-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="assets/fonts/Vazirmatn-Bold.ttf" as="font" type="font/ttf" crossorigin>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ==========================================
+    HEADER
+    =========================================== -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="./images/logo.png" alt="HCTECH" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">صفحه اصلی</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-btn">خدمات ما</a>
+                        <div class="dropdown-content">
+                            <a href="competency.html">طراحی مدل شایستگی</a>
+                            <a href="tm.html">مدیریت استعداد</a>
+                            <a href="sp.html">جانشین‌پروری</a>
+                            <a href="assessmentcenter.html">کانون ارزیابی</a>
+                            <a href="#">دوره‌های توسعه شایستگی</a>
+                            <a href="#">مدیریت عملکرد</a>
+                            <a href="#">کوچینگ</a>
+                            <a href="#">مدیریت دانش</a>
+                            <a href="#">کلینیک رفتاری</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#gallery">نگارخانه</a></li>
+                    <li><a href="contact.html" class="active">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================
+    CONTACT HERO
+    =========================================== -->
+    <section class="contact-hero">
+        <div class="contact-hero-overlay"></div>
+        <div class="contact-hero-lights">
+            <img src="./images/contact/light.png" alt="" class="light light-1">
+            <img src="./images/contact/light.png" alt="" class="light light-2">
+            <img src="./images/contact/light.png" alt="" class="light light-3">
+        </div>
+        <div class="contact-hero-content fade-in-up">
+            <div class="contact-hero-text">
+                <h2 class="contact-hero-handwriting">
+                    <img src="./images/contact/header-line.png" alt="" class="contact-hero-line">
+                    Contact Us
+                    <img src="./images/contact/header-line.png" alt="" class="contact-hero-line">
+                </h2>
+                <h2 class="contact-hero-brand">HCTECH</h2>
+                <p class="contact-hero-desc">Have a unique experience with us</p>
+            </div>
+            <img src="./images/contact/table-set.png" alt="Table Set" class="contact-hero-table">
+        </div>
+    </section>
+
+    <!-- ==========================================
+    CONTACT MAIN
+    =========================================== -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- اطلاعات تماس -->
+                <div class="contact-info-card fade-in-up">
+                    <h2>اطلاعات تماس</h2>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>آدرس</h3>
+                            <p>تهران، خیابان ولیعصر، خیابان رودسر، پلاک 8</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>شماره تماس</h3>
+                            <p><a href="tel:09905672955">09905672955</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>ایمیل</h3>
+                            <p><a href="mailto:hctech.ir@gmail.com">hctech.ir@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>ما را در شبکه‌های اجتماعی دنبال کنید</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فرم تماس -->
+                <div class="contact-form-card fade-in-up">
+                    <h2>ارسال پیام</h2>
+                    <p>با ما در ارتباط باشید. ما مشتاقانه منتظر پیام‌های شما هستیم.</p>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">نام و نام خانوادگی</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ایمیل</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">شماره تماس</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">پیام شما</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn magnetic">ارسال پیام</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    MAP
+    =========================================== -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">موقعیت ما روی نقشه</h2>
+            <div class="map-container fade-in-up">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.8991270945055!2d51.41109491209283!3d35.7176756314048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e02211f34f581%3A0xb1d7eba93b48f3d3!2sValiasr%20St%2C%20Tehran%2C%20Iran!5e0!3m2!1sen!2s!4v1697565234562!5m2!1sen!2s"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    FOOTER
+    =========================================== -->
+    <footer>
+        <div class="wave-container">
+            <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 13 -9"
+                            result="goo" />
+                        <xfeBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                    <path id="wave"
+                        d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+                </defs>
+                <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+                <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+                <g class="gooeff" filter="url(#goo)">
+                    <circle class="drop drop1" cx="20" cy="2" r="8.8" />
+                    <circle class="drop drop2" cx="25" cy="2.5" r="7.5" />
+                    <circle class="drop drop3" cx="16" cy="2.8" r="9.2" />
+                    <circle class="drop drop4" cx="18" cy="2" r="8.8" />
+                    <circle class="drop drop5" cx="22" cy="2.5" r="7.5" />
+                    <circle class="drop drop6" cx="26" cy="2.8" r="9.2" />
+                    <circle class="drop drop1" cx="5" cy="4.4" r="8.8" />
+                    <circle class="drop drop2" cx="5" cy="4.1" r="7.5" />
+                    <circle class="drop drop3" cx="8" cy="3.8" r="9.2" />
+                    <circle class="drop drop4" cx="3" cy="4.4" r="8.8" />
+                    <circle class="drop drop5" cx="7" cy="4.1" r="7.5" />
+                    <circle class="drop drop6" cx="10" cy="4.3" r="9.2" />
+                    <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8" />
+                    <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5" />
+                    <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2" />
+                    <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8" />
+                    <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5" />
+                    <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2" />
+                    <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+                </g>
+            </svg>
+        </div>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>اطلاعات تماس</h3>
+                <p><i class="fas fa-map-marker-alt"></i> آدرس : تهران، خیابان ولیعصر، خیابان رودسر، پلاک 8</p>
+                <p><i class="fas fa-phone"></i> شماره تماس: 09905672955</p>
+                <p><i class="fas fa-envelope"></i> ایمیل: hctech.ir@gmail.com</p>
+                <p><i class="fab fa-instagram"></i> <a href="#">اینستاگرام</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="#">لینکداین</a></p>
+            </div>
+            <div class="message-box">
+                <h3>پیام های شما از این طریق ملاحظه می گردد:</h3>
+                <form>
+                    <input type="text" placeholder="نام و نام خانوادگی" required>
+                    <input type="email" placeholder="تلفن همراه" required>
+                    <textarea placeholder="متن پیام" required></textarea>
+                    <button type="submit">ارسال</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
