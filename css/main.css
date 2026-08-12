@@ -452,6 +452,32 @@ textarea {
     }
 }
 
+/* Exam Button */
+.exam-btn {
+    background: rgba(255, 215, 0, 0.2) !important;
+    border: 1px solid rgba(255, 215, 0, 0.4) !important;
+    border-radius: 20px !important;
+    padding: 6px 16px !important;
+    color: #FFD700 !important;
+    font-weight: 600 !important;
+}
+
+.exam-btn:hover {
+    background: #FFD700 !important;
+    color: #1a1a1a !important;
+}
+
+.header-scrolled .exam-btn {
+    background: rgba(142, 68, 173, 0.1) !important;
+    border-color: rgba(142, 68, 173, 0.3) !important;
+    color: #8e44ad !important;
+}
+
+.header-scrolled .exam-btn:hover {
+    background: #8e44ad !important;
+    color: #fff !important;
+}
+
 @media (max-width: 480px) {
     .header-container {
         height: 58px;
@@ -460,6 +486,11 @@ textarea {
 
     .header .logo {
         height: 32px;
+    }
+
+    .exam-btn {
+        padding: 4px 10px !important;
+        font-size: 0.75rem !important;
     }
 }
 
