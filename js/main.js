@@ -5,6 +5,7 @@
 
 const HCTech = {
     init() {
+        this.setExamLink();
         this.mobileMenu();
         this.headerScroll();
         this.dropdowns();
@@ -44,17 +45,15 @@ const HCTech = {
             mobileMenu.appendChild(clone);
         });
 
-        // کپی لینک‌های dropdown (خدمات)
+        // کپی لینک‌های dropdown (خدمات) — مستقیم بدون divider
         const dropdownLinks = nav.querySelectorAll('.dropdown-content a');
         if (dropdownLinks.length > 0) {
-            const divider = document.createElement('div');
-            divider.className = 'dropdown-services';
-            mobileMenu.appendChild(divider);
-
             dropdownLinks.forEach(link => {
                 const clone = link.cloneNode(true);
+                clone.style.paddingRight = '30px';
+                clone.style.fontSize = '0.9rem';
                 clone.addEventListener('click', () => this.closeMobileMenu(hamburger, mobileMenu, overlay));
-                divider.appendChild(clone);
+                mobileMenu.appendChild(clone);
             });
         }
 
@@ -82,6 +81,17 @@ const HCTech = {
             this.closeMobileMenu(hamburger, mobileMenu, overlay);
         });
     },
+
+
+    setExamLink() {
+        const examLinks = document.querySelectorAll('.exam-btn');
+        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const examUrl = isLocal ? 'http://localhost:3000/exams' : '/exams';
+        examLinks.forEach(link => {
+            link.setAttribute('href', examUrl);
+        });
+    },
+
 
     closeMobileMenu(hamburger, mobileMenu, overlay) {
         hamburger.classList.remove('active');
